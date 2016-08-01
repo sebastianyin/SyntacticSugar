@@ -1,0 +1,89 @@
+.label {
+    -fx-font-size: 80pt;
+    -fx-font-family: "Century Gothic";
+    -fx-opacity: 1.0;
+    -fx-fill: #ffffff;
+  	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.label-bright {
+    -fx-font-size: 40pt;
+    -fx-font-family: "Century Gothic";
+    -fx-opacity: 1;
+}
+
+#game-chooser{
+	-fx-padding:30;
+}
+#game-chooser-title{
+	    -fx-font-family: "Century Gothic";
+	      -fx-font-size: 24pt;
+}
+
+.listview-label{
+-fx-font-family: "Century Gothic";
+	      -fx-font-size: 18pt;
+}
+
+
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Century Gothic";
+    -fx-opacity: 1;
+}
+#game-chooser-title{
+	-fx-font-size:24pt;
+	 -fx-font-family: "Century Gothic";
+	 -fx-padding:5;
+	
+}
+#game-chooser-listview{
+	 -fx-font-family: "Century Gothic";
+	 -fx-font-size:18pt;
+	 -fx-padding:5;
+}
+#game-chooser-vbox{
+	-fx-padding:30;
+}
+
+
+.button {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 0;
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(#CCCCCC, #999999);
+    -fx-font-family: "Century Gothic", Arial, sans-serif;
+    -fx-font-size: 24pt;
+    -fx-text-fill: #333333;
+}
+
+
+
+#options_box{
+	-fx-padding:50 70 0 0;
+}
+
+#menuTitle{
+	-fx-padding:30 70 0 0;
+	-fx-text-fill:#ffffff;
+}
+
+.button:hover {
+	-fx-background-color: #666666;
+	-fx-text-fill: #d8d8d8;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

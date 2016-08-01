@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/java-json.jar"/>
+	<classpathentry kind="lib" path="lib/snappy-java-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.8.jar"/>
+	<classpathentry kind="lib" path="data/enemy"/>
+	<classpathentry kind="lib" path="data/item"/>
+	<classpathentry kind="lib" path="data/player"/>
+	<classpathentry kind="lib" path="data/tower"/>
+	<classpathentry kind="lib" path="images/arrows"/>
+	<classpathentry kind="lib" path="images/enemy"/>
+	<classpathentry kind="lib" path="images/path"/>
+	<classpathentry kind="lib" path="images/player"/>
+	<classpathentry kind="lib" path="images/scenery"/>
+	<classpathentry kind="lib" path="images/tower"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="data/games"/>
+	<classpathentry kind="lib" path="images/menu"/>
+	<classpathentry kind="lib" path="images/item"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

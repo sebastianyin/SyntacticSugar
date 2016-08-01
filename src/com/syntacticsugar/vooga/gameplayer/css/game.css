@@ -1,0 +1,71 @@
+.vbox{
+	-fx-padding:30;
+}
+.label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Century Gothic";
+    -fx-fill: #ffffff;
+  	-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.label-bright {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Century Gothic";
+    -fx-opacity: 1;
+}
+
+#tower-shop{
+	-fx-border-color: #e2e2e2;
+    -fx-border-width: 10;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 30pt;
+    -fx-text-fill: #333333;
+}
+
+#game-data{
+	-fx-font-size: 24pt;
+    -fx-font-family: "Century Gothic";
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Century Gothic";
+}
+
+.button {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 0;
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(#CCCCCC, #999999);
+    -fx-font-family: "Century Gothic", Arial, sans-serif;
+    -fx-font-size: 24pt;
+    -fx-text-fill: #333333;
+}
+
+#options_box{
+	-fx-padding:50 70 0 0;
+}
+
+#menuTitle{
+	-fx-padding:30 70 0 0;
+	-fx-text-fill:#ffffff;
+}
+
+.button:hover {
+	-fx-background-color: #1d1d1d;
+	-fx-text-fill: #d8d8d8;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

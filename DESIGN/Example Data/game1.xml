@@ -1,0 +1,211 @@
+<game> <!--  Game object -->
+	<name>Game Name</name>
+	<creation> <!-- GameEdit object -->
+		<author>Firstname Lastname</author>
+		<date>2015-11-05</date> <!-- Date format undecided -->
+		<note>Created the game!</note>
+	</creation>
+	<history> <!-- List of GameEdit objects --> <!-- History updated every time editor is saved -->
+		<edit> <!-- GameEdit object -->
+			<author>Firstname Lastname</author>
+			<date>2015-11-05</date>
+			<note>Created the game splashscreen</note>
+		</edit>
+		<edit>
+			<author>Firstname Lastname</author>
+			<date>2015-11-05</date>
+			<note>Added 5 more levels</note>
+		</edit>
+		<edit>
+			<author>Firstname Lastname</author>
+			<date>2015-11-05</date>
+			<note>Created a few more characters</note>
+		</edit>
+	</editions>
+	<globalSettings>
+		<display>
+			<width>1000</width>
+			<height>800</height>
+			<framerate>30</framerate>
+		</display>
+	</globalSettings>
+	<towers>
+		<tower>
+			<name>Big Bad Tower</name>
+			<id>1</id>
+			<items>
+				<weapon>Uzi</weapon>
+				<damage>55</damage>
+				<img>uzi.png</img>
+				<speed>12</speed>
+				<range>800</range>
+			</items>
+		</tower>
+	</towers>
+	<enemies>
+		<enemy>
+			<name>Bad Boy</name>
+			<id>1</id>
+			<health>55</health>
+			<speed>4</speed>
+			<img>badboy.png</img>
+			<spawns>
+				<name>2</name>
+				<name>2</name>
+			</spawns>
+		</enemy>
+		<enemy>
+			<name>Bad Girl</name>
+			<id>2</id>
+			<health>52</health>
+			<speed>5</speed>
+			<img>badgirl.png</img>
+			<spawns></spawns>
+		</enemy>
+	</enemies>
+	<players> <!-- List of Character objects --> <!-- Might be wise to change name from 'Character' -->
+		<player> <!-- Character object -->
+			<name>Princess</name>
+			<id>1</id>
+			<visible>true</visible>
+			<health>1</health>
+			<x>15</x> <!-- need to determine coordinate system -->
+			<y>200</y>
+			<width>18</width>
+			<height>55</height>
+			<speed>10</speed>
+			<depth>2</depth> <!-- depth determines which objects appear in-front or behind other objects - larger depth = more in front -->
+			<items> <!-- list of Item objects -->
+				<weapon> <!-- extends Item interface ??? -->
+					<name>Broadsword</name>
+					<damage>5</damage>
+					<img>broadsword.png</img>
+					<speed>55</speed>
+					<range>50</range>
+				</weapon>
+				<weapon>
+					<name>Machine Gun</name>
+					<damage>2</damage>
+					<img>machinegun.png</img>
+					<speed>14</speed>
+					<range>100</range>
+					<potion> <!-- extends Item interface ??? -->
+						<name>Red Potion</name>
+						<health>50</health>
+						<img>redpotion.png</img>
+						<speed>25</speed>
+					</potion>
+					<purse> <!-- extends Item interface ??? -->
+						<name>Coin Purse</name>
+						<currency>Gold Coin</currency>
+						<number>50000</number>
+						<max>100000</max>
+					</purse>
+				</items>
+				<animations> <!-- List of animation states -->
+					<animation>
+						<time>2</time>
+						<img>anim1</img>
+					</animation>
+					<animation>
+						<time>4</time>
+						<img>anim2</img>
+					</animation>
+				</animations>
+				<friends> <!-- for healing or something like that -->
+				</friends>
+				<enemies> <!-- automatically attacks (or can attack) -->
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+				</enemies>
+			</player>
+		</players>
+		<tiles>
+			<tile>
+				<name>Street Path</name>
+				<id>1</id>
+				<walkable>true</walkable>
+				<img>streetpath.png</img>
+			</tile>
+		</tiles>
+		<maps>
+			<map>
+				<name>Green Plains</name>
+				<id>1</id>
+				<tile>
+					<x>0</x>
+					<y>0</y>
+					<id>5</id>
+				</tile>
+				<tile>
+					<x>0</x>
+					<y>1</y>
+					<id>55</id>
+				</tile>
+				<tile>
+					<x>0</x>
+					<y>2</y>
+					<id>14</id>
+				</tile>
+			</map>
+		</maps>
+		<levels>
+			<level>
+				<levelNumber>1</levelNumber>
+				<map>1</map>
+				<towers>
+					<tower>12</tower>
+					<tower>15</tower>
+					<tower>17</tower>
+				</towers>
+				<enemies>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+				</enemies>
+				<players>
+				</players>
+			</level>
+			<level>
+				<levelNumber>2</levelNumber>
+				<map>1</map>
+				<towers>
+					<tower>12</tower>
+					<tower>15</tower>
+					<tower>17</tower>
+					<tower>18</tower>
+				</towers>
+				<enemies>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>1</enemy>
+					<enemy>1</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+					<enemy>2</enemy>
+				</enemies>
+				<players>
+				</players>
+			</level>
+		</levels>
+	</game>

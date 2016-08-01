@@ -1,0 +1,29 @@
+<currentGame>
+	<name>Saved Game Name</name>
+	<date>2015-11-10</date>
+	<author>Jiawei Zhang</author>
+	<game>game1.xml</game>
+	<level>12</level>
+	<coins>555</coins>
+	<lives>100</lives>
+	<map>
+		<tile>
+			<x>0</x>
+			<y>0</y>
+		</tile>
+		<tile>
+			<x>1</x>
+			<y>0</y>
+			<tower>
+				<id>1</id>
+				<upgrades>
+					<upgrade>1</upgrade>
+					<upgrade>3</upgrade>
+					<upgrade>5</upgrade>
+					<upgrade>2</upgrade>
+					<upgrade>7</upgrade>
+				</upgrades>
+			</tower>
+		</tile>
+	</map>
+</currentGame>
